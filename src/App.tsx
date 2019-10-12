@@ -7,6 +7,9 @@ import Home from "./components/Home";
 import About from "./components/About";
 import Contact from "./components/Contact";
 import ErrorInfo from "./components/ErrorInfo";
+import MyFormPage from "./components/MyFormPage";
+import ClippedDrawer from "./components/ClippedDrawer";
+import PersistentDrawerLeft from "./components/PersistentDrawerLeft";
 
 const App: React.FC = () => {
   return (
@@ -17,6 +20,13 @@ const App: React.FC = () => {
           <Route path="/" component={Home} exact />
           <Route path="/about" component={About} />
           <Route path="/contact" component={Contact} />
+          <Route path="/myform" component={MyFormPage} />
+          <Route path="/clippeddrawer" component={ClippedDrawer} />
+          <Route
+            path="/persistentdrawerleft"
+            component={PersistentDrawerLeft}
+          />
+
           <Route component={ErrorInfo} />
         </Switch>
       </div>
