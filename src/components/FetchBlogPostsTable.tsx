@@ -51,6 +51,8 @@ const SimpleMaterialTable: React.FC<SimpleMaterialTableProps> = ({ rows }) => {
     <div style={{ maxWidth: "100%" }}>
       <MaterialTable
         options={{
+          // Angular Material: mat-table-exporter
+          // https://github.com/HalitTalha/mat-table-extensions/tree/master/projects/mat-table-exporter
           exportButton: true
           //   search: false,
           //   paging: false
