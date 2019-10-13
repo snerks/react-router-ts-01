@@ -101,7 +101,7 @@ export default function PersistentDrawerLeft() {
   const links = [
     { path: "/", text: "Home", icon: <InboxIcon /> },
     { path: "/", text: "Mail", icon: <MailIcon /> },
-    { path: "/", text: "Other", icon: <InboxIcon /> }
+    { path: "/fetchblogposts", text: "Fetch Blog Posts", icon: <InboxIcon /> }
   ];
 
   return (
@@ -128,6 +128,7 @@ export default function PersistentDrawerLeft() {
           </Typography>
         </Toolbar>
       </AppBar>
+
       <Drawer
         className={classes.drawer}
         variant="persistent"

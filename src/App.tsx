@@ -10,14 +10,17 @@ import ErrorInfo from "./components/ErrorInfo";
 import MyFormPage from "./components/MyFormPage";
 import ClippedDrawer from "./components/ClippedDrawer";
 import PersistentDrawerLeft from "./components/PersistentDrawerLeft";
+import FetchBlogPosts from "./components/FetchBlogPosts";
 
 const App: React.FC = () => {
   return (
     <BrowserRouter>
       <div>
-        <Navigation />
+        {/* <Navigation /> */}
         <Switch>
-          <Route path="/" component={Home} exact />
+          {/* <Route path="/" component={Home} exact /> */}
+          <Route path="/" component={FetchBlogPosts} exact />
+
           <Route path="/about" component={About} />
           <Route path="/contact" component={Contact} />
           <Route path="/myform" component={MyFormPage} />
@@ -26,7 +29,7 @@ const App: React.FC = () => {
             path="/persistentdrawerleft"
             component={PersistentDrawerLeft}
           />
-
+          <Route path="/fetchblogposts" component={FetchBlogPosts} />
           <Route component={ErrorInfo} />
         </Switch>
       </div>
