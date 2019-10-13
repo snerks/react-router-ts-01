@@ -19,7 +19,7 @@ const App: React.FC = () => {
         {/* <Navigation /> */}
         <Switch>
           {/* <Route path="/" component={Home} exact /> */}
-          <Route path="/" component={FetchBlogPosts} exact />
+          <Route path="/" component={PersistentDrawerLeft} exact />
 
           <Route path="/about" component={About} />
           <Route path="/contact" component={Contact} />
