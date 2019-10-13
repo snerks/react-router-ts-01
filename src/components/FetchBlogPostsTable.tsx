@@ -51,9 +51,9 @@ const SimpleMaterialTable: React.FC<SimpleMaterialTableProps> = ({ rows }) => {
     <div style={{ maxWidth: "100%" }}>
       <MaterialTable
         options={{
-          exportButton: true,
-          search: false,
-          paging: false
+          exportButton: true
+          //   search: false,
+          //   paging: false
         }}
         //   icons={tableIcons}
 
