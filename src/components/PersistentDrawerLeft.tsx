@@ -26,6 +26,7 @@ import { NavLink } from "react-router-dom";
 import { Link } from "@material-ui/core";
 import FetchBlogPosts from "./FetchBlogPosts";
 import FetchBlogPostsTable from "./FetchBlogPostsTable";
+import DoughnutPage from "./DoughnutPage";
 
 const drawerWidth = 240;
 
@@ -212,7 +213,10 @@ export default function PersistentDrawerLeft() {
           eleifend. Commodo viverra maecenas accumsan lacus vel facilisis. Nulla
           posuere sollicitudin aliquam ultrices sagittis orci a.
         </Typography> */}
-        <FetchBlogPostsTable />
+        <div>
+          <DoughnutPage />
+          <FetchBlogPostsTable />
+        </div>
       </main>
     </div>
   );
